@@ -1,0 +1,27 @@
+{
+  "name": "Burger",
+  "version": "1.0.0",
+  "description": "An app that generates menu items and then allows the user to display them as available or eaten. the app uses Node and MySQL to query and route data and Handlebars to generate HTML",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skylerdakota/Burger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skylerdakota/Burger/issues"
+  },
+  "homepage": "https://github.com/skylerdakota/Burger#readme"
+}
