@@ -1,19 +1,34 @@
+body{
+  background: #f1f50e;
+}
+
+h1, h3{
+  text-align: center;
+  color: rgb(13, 13, 94);
+}
+
+/* #gone{
+  background: #b2c9f3;
+}
+
+#menu{
+  background: #6b96e6;
+} */
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #bdd1f5;
 }
 
-.label {
-  font-weight: bold;
+#add-new{
+  text-align: center;
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
+button{
+  background: #0cc6cc;
 }
 
-.form-group {
-  margin-bottom: 5px;
+.image{
+  text-align: center;
 }

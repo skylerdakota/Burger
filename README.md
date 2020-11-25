@@ -1,13 +1,9 @@
 # Burger
 An app that generates menu items and then allows the user to display them as available or eaten. the app uses Node and MySQL to query and route data and Handlebars to generate HTML
 
-<!-- [Team Roster Generator](https://skylerdakota.github.io/Team-Roster-Generator/)
+[Eat-a-Burger](https://skylerdakota.github.io/Burger/)
 
-![Demo](Assets/roster.png) -->
-
-<!-- #### Project Demonstration
-
-* [Application Demonstration](https://drive.google.com/file/d/1apEu5VemyZsXn0xMmWjGmszI2r7c1d-H/preview) -->
+![Demo](public/assets/img/eataburger.png)
 
 #### Table of Contents
 

@@ -1,38 +1,48 @@
-<h1>Cats!</h1>
-
-<h2>Cats that are not sleepy!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Cats that are sleepy!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Cat</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
+<main>
+  <h1>Eat-a-Burger!</h1>
+  <div class="container">
+    <div class="col s6 image">
+        <img src="/assets/img/burger.png" alt="Burger" class=".img-fluid. max-width: 100%; height: auto;">
+    </div>
+    </div>
+    <row>
+      <div class="col-sm" id="add-new">
+        <h2>Add a Burger to the Menu!</h2>
+          <form class="create-form">
+            <div class="form-group">
+              <input type="text" id="burger" name="name" placeholder="Add a Burger">
+              <button type="submit" >Submit</button>
+            </div>
+          </form>
+      </div>
+    </row>
   </div>
+    <div class="row">
+      <div class="col-6" id="menu">
+        <h3>Menu</h3>
+        <ul>
+          {{#each burgers}}
+            {{#unless devoured}}
+              <li>
+                  {{this.burger_name}}
+                  <button class="devour" data-id="{{this.id}}" >Devour it!</button>
+              </li> 
+            {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
 
-  <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
-
-  <button type="submit">Add Cat</button>
-</form>
+      <div class="col-6" id="gone">
+        <h3>Sorry, you're too late!</h3>
+        <ul>
+          {{#each burgers}}
+            {{#if devoured}}
+              <li>
+                  {{this.burger_name}}
+              </li>
+            {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+  
+</main>
